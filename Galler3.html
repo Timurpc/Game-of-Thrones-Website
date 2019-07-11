@@ -1,0 +1,581 @@
+﻿﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Game of Thrones</title>
+    <link rel="icon" href="http://vignette2.wikia.nocookie.net/gameofthrones/images/1/17/Game_of_Thrones_War_is_Coming.jpg/revision/latest?cb=20120301142149">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        body {
+            line-height: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            background-color: black;
+            background-image: url("img/snowing.gif");
+            background-size: 300px 300px;
+            margin: 0 auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+        /*Text Decoration*/
+        iframe {
+            margin-left: 10px;
+            margin-bottom: 7px;
+        }
+
+        h1 {
+            margin: 0px;
+            margin-bottom: 10px;
+            padding: 5px 0;
+            font-size: 26px;
+            color: #fbe270;
+            font-weight: normal;
+            text-align: left;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            padding: 9px 0 10px 0;
+            font-size: 22px;
+            color: #bded30;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            padding: 0 0 10px 0;
+            font-size: 20px;
+            color: #bded30;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        p {
+            font-size: 16px;
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+            font-family: 'Times New Roman';
+        }
+
+
+        .container {
+            border: 2px solid black;
+            width: 1200px;
+            height: 1340px;
+            margin: 0px auto;
+        }
+
+            .container .img1 {
+                margin-left: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .container .img2 {
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+
+        .block1 {
+            width: 1100px;
+            height: 240px;
+            margin-top: 0px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+            background: black url("img/templatemo_content_bg.jpg") top right no-repeat;
+        }
+
+            .block1 img {
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+
+        .subclock1 {
+            width: 1100px;
+            height: 59px;
+            margin-right: 50px;
+            margin-left: 50px;
+            /* background-color: #0b0c04; */
+            background: black url("img/templatemo_menu_panel_bg.jpg") top right no-repeat;
+        }
+
+
+            .subclock1 ul {
+                float: left;
+            }
+
+                .subclock1 ul li {
+                    display: inline;
+                }
+
+                    .subclock1 ul li a {
+                        float: left;
+                        width: 130px;
+                        padding: 3px 0;
+                        margin-right: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #fbe270;
+                        border-right: 1px solid #5f3b11;
+                    }
+
+                    .subclock1 ul li .nodecoration {
+                        float: left;
+                        width: 130px;
+                        padding: 3px 0;
+                        margin-right: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #fbe270;
+                        border-right: 1px solid #5f3b11;
+                        border-right: 0px;
+                    }
+
+                    .subclock1 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        .block2 {
+            width: 770px;
+            height: 990px;
+            background-color: #0b0c04;
+            margin-left: 10px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: left;
+        }
+
+        #back; {
+            background-image: url("img/templatemo_post_bg.jpg");
+            background-position-x: right;
+            background-repeat: no-repeat;
+        }
+
+        .block3 {
+            width: 300px;
+            height: 380px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block3 ul li {
+                height: 40px;
+            }
+
+                .block3 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block3 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        .block4 {
+            width: 300px;
+            height: 340px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block4 ul li {
+                height: 40px;
+            }
+
+                .block4 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block4 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        .block5 {
+            width: 300px;
+            height: 230px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block5 ul li {
+                height: 40px;
+            }
+
+                .block5 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block5 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+        /*footer1111111111111111111111111111111111*/
+
+        #bottom_panel {
+            width: 100%;
+            min-height: 250px;
+            margin: 0 auto;
+            background: #050702 url(img/templatemo_content_bottom.jpg) center bottom no-repeat;
+        }
+
+            #bottom_panel #bottom_section {
+                overflow: hidden;
+                height: 100%;
+                width: 930px;
+                margin: 0 auto;
+                padding: 40px 0 15px 30px;
+            }
+
+                #bottom_panel #bottom_section a {
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    #bottom_panel #bottom_section a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        #bottom_section .bottom_section_content {
+            display: inherit;
+            float: left;
+            width: 270px;
+            padding-right: 20px;
+            margin: 0 0 15px 10px;
+        }
+
+            #bottom_section .bottom_section_content img {
+                float: left;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+        .bottom_section_content .gallery {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+        }
+
+            .bottom_section_content .gallery li {
+                padding: 0;
+                float: left;
+                margin: 0 4px 4px 0;
+                width: 80px;
+                height: 70px;
+                border: 3px solid #000000;
+            }
+
+            .bottom_section_content .gallery img {
+                border: none;
+            }
+
+        .bottom_section_content .list_section {
+            margin: 0 0 15px 30px;
+            padding: 0;
+        }
+
+        /*footer111111*/
+        /*footer2222222222*/
+        footer {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            background: #040500 url(img/templatemo_footer_bg.jpg) center top no-repeat;
+            border-top: 1px solid #141204;
+        }
+
+            footer a {
+                text-align: left;
+                text-decoration: none;
+                color: #fbe270;
+            }
+
+                footer a:hover {
+                    color: floralwhite;
+                    text-decoration: none;
+                }
+
+            footer #underfooter {
+                width: 960px;
+                height: 10px;
+                margin: 0 auto;
+                padding: 20px 15px;
+                text-align: center;
+                color: white;
+            }
+
+        #colorwhite {
+            color: white;
+        }
+    </style>
+
+</head>
+
+<body class="dynamic">
+    <div class="container">
+        <div class="subclock1">
+            <ul>
+                <li><a><img src="img/loggo.jpg" width="60" height="20"></a></li>
+                <li><a href="http://localhost:62415/HtmlPage1.html">Main</a></li>
+                <li><a href="http://localhost:63779/HtmlPage1.html" id="colorwhite">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+                <li><a href="#">Russian-<img src="img/russia.jpg" width="20" height="10"></a></li>
+                <li><div class="nodecoration"><img src="img/loggo.jpg" width="60" height="20"></div></li>
+            </ul>
+        </div>
+        <div class="block1" id=" block">
+
+            <img src="img/header.png" width="500" height="200">
+
+        </div>
+
+        <!--**************************************** Main block ***************************************************-->
+        <!--**************************************** Main block ***************************************************-->
+        <!--**************************************** Main block ***************************************************-->
+        <div class="block2" id="back">
+            <img src="img/loggo.jpg" height="80" width=" 200">
+            <h1> &nbsp;&nbsp; Gallery</h1>
+
+
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://www.pixelstalk.net/wp-content/uploads/2015/11/Awesome-Game-of-Thrones-Wallpaper-HD.jpg" target="_blank">
+                            <img src="http://www.pixelstalk.net/wp-content/uploads/2015/11/Awesome-Game-of-Thrones-Wallpaper-HD.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+                            <div class="caption">
+                                <p>Unbowed, Unbroken</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://www.pixelstalk.net/wp-content/uploads/2015/11/Game_of_Thrones_1920x1080.jpg" target="_blank">
+                            <img src="http://www.pixelstalk.net/wp-content/uploads/2015/11/Game_of_Thrones_1920x1080.jpg" alt="Pulpit Rock" style="width:100%">
+                            <div class="caption">
+                                <p>The Castle</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://www.pixelstalk.net/wp-content/uploads/2015/11/game-ofthrones-daenerys-background.jpg" target="_blank">
+                            <img src="http://www.pixelstalk.net/wp-content/uploads/2015/11/game-ofthrones-daenerys-background.jpg" alt="Cinque Terre" style="width:100%">
+                            <div class="caption">
+                                <p>Dragons Empire</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Game-of-Thrones-Dragon-Movie-2014-HD-Wallpaper.jpg" target=" _blank">
+                            <img src="http://hdwallpaperbackgrounds.net/wp-content/uploads/2015/09/Game-of-Thrones-Dragon-Movie-2014-HD-Wallpaper.jpg" alt="Pulpit Rock" style="width:100%">
+                            <div class="caption">
+                                <p>Dragons Empire</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://thiswallpaper.com/cdn/hdwallpapers/799/game%20thrones%20beautiful%20hd%20%20photo.jpg" target="_blank">
+                            <img src="http://thiswallpaper.com/cdn/hdwallpapers/799/game%20thrones%20beautiful%20hd%20%20photo.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+                            <div class="caption">
+                                <p>Watch Begins</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://thiswallpaper.com/cdn/hdwallpapers/799/game%20thrones%20dragon%20widescreen%20wallpaper.jpg" target="_blank">
+                            <img src="http://thiswallpaper.com/cdn/hdwallpapers/799/game%20thrones%20dragon%20widescreen%20wallpaper.jpg" alt="Cinque Terre" style="width:100%">
+                            <div class="caption">
+                                <p>Dragon</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://thiswallpaper.com/cdn/hdwallpapers/799/horse%20game%20thrones%20high%20definition.jpg" target="_blank">
+                            <img src="http://thiswallpaper.com/cdn/hdwallpapers/799/horse%20game%20thrones%20high%20definition.jpg" alt="Pulpit Rock" style="width:100%">
+                            <div class="caption">
+                                <p>The Fury</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://thiswallpaper.com/cdn/hdwallpapers/741/hot%20emilia%20clarke%20background%20picture.jpg" target="_blank">
+                            <img src="http://thiswallpaper.com/cdn/hdwallpapers/741/hot%20emilia%20clarke%20background%20picture.jpg" alt="Moustiers Sainte Marie" style="width:100%">
+                            <div class="caption">
+                                <p>Hot Emilia</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="thumbnail">
+                        <a href="http://backwallpapers.com/wp-content/uploads/2016/07/The-White-Wolf-Gang-Game-of-Thrones-HD-Wallpaper.jpg" target=" _blank">
+                            <img src="http://backwallpapers.com/wp-content/uploads/2016/07/The-White-Wolf-Gang-Game-of-Thrones-HD-Wallpaper.jpg" alt="Cinque Terre" style="width:100%">
+                            <div class="caption">
+                                <p>Main Characters</p>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+            </div>
+
+            <ul class="pagination" style="margin-left:42%; margin-right:42%">
+                <li><a href="http://localhost:62415/Gallery1.html">1</a></li>
+                <li><a href="http://localhost:62415/Gallery2.html">2</a></li>
+                <li class="disabled"><a href="http://localhost:62415/Galler3.html">3</a></li>
+            </ul>
+
+
+        </div>
+        <!--**************************************** Main block ***************************************************-->
+        <!--**************************************** Main block ***************************************************-->
+        <!--**************************************** Main block ***************************************************-->
+        <div class="block3">
+            <h2>NOBLE HOUSES</h2>
+            <ul>
+                <li><a href="http://localhost:62415/HouseArryn.html">House Arryn</a></li>
+                <li><a href="http://localhost:62415/HouseFrey.html">House Frey </a></li>
+                <li><a href="http://localhost:62415/HouseGreyjoy.html">House Greyjoy </a></li>
+                <li><a href="http://localhost:62415/HoueseLanister.html">House Lannister</a></li>
+                <li><a href="http://localhost:62415/HouseStark.html">House Stark</a></li>
+                <li><a href="http://localhost:62415/HouseTyrell.html">House Tyrell  </a></li>
+                <li><a href="http://localhost:62415/HouseTargaryen.html">House Targaryen </a></li>
+                <li><a href="http://localhost:62415/HouseTully.html">House Tully </a></li>
+            </ul>
+        </div>
+        <div class="block4">
+            <h2>Seasons</h2>
+            <ul>
+                <li><a href="http://localhost:62415/Season1.html">Season 1</a></li>
+                <li><a href="http://localhost:62415/Season2.html">Season 2</a></li>
+                <li><a href="http://localhost:62415/Season3.html">Season 3</a></li>
+                <li><a href="http://localhost:62415/Season4.html">Season 4</a></li>
+                <li><a href="http://localhost:62415/Season5.html">Season 5</a></li>
+                <li><a href="http://localhost:62415/Season6.html">Season 6</a></li>
+                <li><a href="http://localhost:62415/Season7.html#">Season 7</a></li>
+            </ul>
+        </div>
+        <div class="block5">
+            <h2>Hello</h2>
+            <ul>
+                <li><a href="http://localhost:62415/HtmlPage1.html">Main</a></li>
+                <li><a href="http://localhost:63779/HtmlPage1.html" id="colorwhite">Gallery</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+
+    </div>
+    <div id="bottom_panel">
+        <div id="bottom_section">
+
+            <div class="bottom_section_content">
+                <h3>Gallery</h3>
+                <ul class="gallery">
+                    <li><img src="img/stark.jpg" alt="stark" width="80" height="70" /></li>
+                    <li><img src="img/targarien.jpg" alt="targarien" width="80" height="70" /></li>
+                    <li><img src="img/baratheon.jpg" alt="baratheon" width="80" height="70" /></li>
+                    <li><img src="img/arryn.png" alt="image name" width="80" height="70" /></li>
+                    <li><img src="img/lanister.jpg" alt="image name" width="80" height="70" /></li>
+                    <li><img src="img/tyrell.png" alt="image name" width="80" height="70" /></li>
+                </ul>
+            </div>
+
+            <div class="bottom_section_content">
+                <h3>Families</h3>
+                <ul class="list_section">
+                    <li><a href="http://localhost:62415/HouseArryn.html">House Arryn</a></li>
+                    <li><a href="http://localhost:62415/HouseFrey.html">House Frey </a></li>
+                    <li><a href="http://localhost:62415/HouseGreyjoy.html">House Greyjoy </a></li>
+                    <li><a href="http://localhost:62415/HoueseLanister.html">House Lannister</a></li>
+                    <li><a href="http://localhost:62415/HouseStark.html">House Stark</a></li>
+                    <li><a href="http://localhost:62415/HouseTyrell.html">House Tyrell  </a></li>
+                    <li><a href="http://localhost:62415/HouseTargaryen.html">House Targaryen </a></li>
+                    <li><a href="http://localhost:62415/HouseTully.html">House Tully </a></li>
+                </ul>
+            </div>
+
+
+            <div class="bottom_section_content">
+                <h3>Other Links</h3>
+                <ul class="list_section">
+                    <li><a href="http://localhost:62415/HtmlPage1.html">Main</a></li>
+                    <li><a href="http://localhost:63779/HtmlPage1.html" id="colorwhite">Gallery</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Contact us</a></li>
+                </ul>
+                <a href="https://www.facebook.com/Game-Of-Thrones-Support-Group-622086104487938/"><img style="border:0;width:60px;height:60px" src="img/Facebook_ogo.png" alt="facebook" /></a>
+                <a href="https://www.instagram.com/gameofthrones/"><img style="border:0;width:60px;height:60px" src="img/Instagram_logo.png" alt="instagram" /></a>
+            </div>
+
+        </div>
+    </div>
+    <footer>
+        <div id="underfooter">
+            Copyright © 2016 <a href="http://www.dongseo.ac.kr">Dongseo University</a> |
+            <a href="#">Sardor-20152778</a> and <a href="#">Timur-20152783</a>
+        </div>
+    </footer>
+
+</body>
+</html>

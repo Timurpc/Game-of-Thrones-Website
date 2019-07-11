@@ -1,0 +1,441 @@
+﻿/*@keyframes example {
+    0%  {background-color:red; left:0px; top:0px;}
+    25% {background-color:yellow; left:200px; top:0px;}
+    50% {background-color:blue; left:200px; top:200px;}
+    75% {background-color:green; left:0px; top:200px;}
+    100%{background-color:black; left:0px; top:0px;}
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    background-color: none;
+    animation-name:example;
+    animation-duration: 4s;
+}*/
+
+body {
+            line-height: 1.5em;
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 12px;
+            background-color:black;
+            background-image: url("img/snowing.gif");
+             background-image: url("img/snowing2.gif");
+            background-size:300px 300px; 
+            margin: 0 auto;
+            background-repeat: repeat;
+            background-attachment: fixed;
+        }
+        /*Text Decoration*/
+        iframe{
+            margin-left:10px;
+            margin-bottom:7px;
+        }
+        h1 {
+            margin: 0px;
+            margin-bottom:10px;
+            padding: 5px 0;
+            font-size: 26px;
+            color: #fbe270;
+            font-weight: normal;
+            text-align: left;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        h2 {
+            margin: 0 0 15px 0;
+            padding: 9px 0 10px 0;
+            font-size: 22px;
+            color: #bded30;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        h3 {
+            margin: 0 0 15px 0;
+            padding: 0 0 10px 0;
+            font-size: 20px;
+            color: #bded30;
+            border-bottom: 1px dotted #bded30;
+        }
+
+        p {
+            font-size:16px;
+            margin: 10px;
+            padding: 10px;
+            text-align: justify;
+            font-family:'Times New Roman';
+        }
+       
+
+        .container {
+            border: 2px solid black;
+            width: 1200px;
+            height: 1800px;
+            margin: 0px auto;
+            
+        }
+
+            .container .img1 {
+                margin-left: 50px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+            .container .img2 {
+                margin-left: 20px;
+                margin-top: 10px;
+                margin-bottom: 10px;
+            }
+
+
+        .block1 {
+            width: 1100px;
+            height: 240px;
+            margin-top: 0px;
+            margin-right: 50px;
+            margin-left: 50px;
+            margin-bottom: 10px;
+          background: black url("img/templatemo_content_bg.jpg") top right no-repeat;
+        }
+
+            .block1 img {
+                margin-top: 20px;
+                margin-left: 40px;
+            }
+
+        .subclock1 {
+            width: 1100px;
+            height: 59px;
+            margin-right: 50px;
+            margin-left: 50px;
+            /* background-color: #0b0c04; */
+            
+            background: black url("img/templatemo_menu_panel_bg.jpg") top right no-repeat;
+        }
+
+
+            .subclock1 ul {
+                float: left;
+            }
+
+                .subclock1 ul li {
+                    display: inline;
+                }
+
+                    .subclock1 ul li a {
+                        float: left;
+                        width: 130px;
+                        padding: 3px 0;
+                        margin-right: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #fbe270;
+                        border-right: 1px solid #5f3b11;
+                    }
+
+                    .subclock1 ul li .nodecoration {
+                        float: left;
+                        width: 130px;
+                        padding: 3px 0;
+                        margin-right: 5px;
+                        font-size: 14px;
+                        font-weight: bold;
+                        text-align: center;
+                        text-decoration: none;
+                        color: #fbe270;
+                        border-right: 1px solid #5f3b11;
+                        border-right: 0px;
+                    }
+
+                    .subclock1 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        .block2 {
+            width: 770px;
+            height: 990px;
+            background-color: #0b0c04;
+            margin-left: 50px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: left;
+                    }
+
+
+        #back {
+            background-image: url("img/templatemo_post_bg.jpg");
+            background-position-x: right;
+            background-repeat: no-repeat;
+        }
+
+        .block3 {
+            width: 300px;
+            height: 380px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+    
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block3 ul li {
+                height: 40px;
+            }
+
+                .block3 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block3 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+
+
+        .block4 {
+            width: 300px;
+            height: 340px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block4 ul li {
+                height: 40px;
+            }
+
+                .block4 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block4 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        .block5 {
+            width: 300px;
+            height: 230px;
+            background-image: url("img/templatemo_right_section_bg.jpg");
+            margin-top: 10px;
+            margin-bottom: 10px;
+            margin-left: 25px;
+            float: left;
+            background-repeat: no-repeat;
+            background-color: #0b0c04;
+            background-position-x: right;
+        }
+
+            .block5 ul li {
+                height: 40px;
+            }
+
+                .block5 ul li a {
+                    font-size: 17px;
+                    height: 150px;
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    .block5 ul li a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+
+/*/////////////////////Contact us//////////////////////////////*/
+          .c_block1{
+            width: 300px;
+            height: 350px;
+            background-color: #0b0c04;
+            margin-right: 100px;
+            margin-top: 10px;
+            margin-bottom: 10px;
+            float: right;
+           }
+           .c_block1 ul li {
+               color:white;
+                height: 40px;
+                font-size:20px;
+                margin:5px;
+            }
+#padding {
+    padding:10px;
+    margin:20px;
+}
+        /*footer1111111111111111111111111111111111*/
+
+        #bottom_panel {
+            width: 100%;
+            min-height: 250px;
+            margin: 0 auto;
+            background: #050702 url(img/templatemo_content_bottom.jpg) center bottom no-repeat;
+        }
+
+            #bottom_panel #bottom_section {
+                overflow: hidden;
+                height: 100%;
+                width: 930px;
+                margin: 0 auto;
+                padding: 40px 0 15px 30px;
+            }
+
+                #bottom_panel #bottom_section a {
+                    text-align: left;
+                    text-decoration: none;
+                    color: #fbe270;
+                }
+
+                    #bottom_panel #bottom_section a:hover {
+                        color: floralwhite;
+                        text-decoration: none;
+                    }
+
+        #bottom_section .bottom_section_content {
+            display: inherit;
+            float: left;
+            width: 270px;
+            padding-right: 20px;
+            margin: 0 0 15px 10px;
+        }
+
+            #bottom_section .bottom_section_content img {
+                float: left;
+                margin-right: 5px;
+                margin-bottom: 5px;
+            }
+
+        .bottom_section_content .gallery {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            background: #000000;
+        }
+
+            .bottom_section_content .gallery li {
+                padding: 0;
+                float: left;
+                margin: 0 4px 4px 0;
+                width: 80px;
+                height: 70px;
+                border: 3px solid #000000;
+            }
+
+            .bottom_section_content .gallery img {
+                border: none;
+            }
+
+        .bottom_section_content .list_section {
+            margin: 0 0 15px 30px;
+            padding: 0;
+        }
+
+        /*footer111111*/
+        /*footer2222222222*/
+        footer {
+            width: 100%;
+            height: 50px;
+            margin: 0 auto;
+            background: #040500 url(img/templatemo_footer_bg.jpg) center top no-repeat;
+            border-top: 1px solid #141204;
+        }
+
+            footer a {
+                text-align: left;
+                text-decoration: none;
+                color: #fbe270;
+            }
+
+                footer a:hover {
+                    color: floralwhite;
+                    text-decoration: none;
+                }
+
+            footer #underfooter {
+                width: 960px;
+                height: 10px;
+                margin: 0 auto;
+                padding: 20px 15px;
+                text-align: center;
+                color:white;
+            }
+
+#colorwhite {
+    color: white;
+}
+
+/********************* Contact US 
+.dropbtn {
+    background-color: none;
+    color: white;
+   
+
+    border: none;
+    cursor: pointer;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+   
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+
+.dropdown-content a {
+    color: black;
+
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {background-color: lightgreen}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+.dropdown:hover .dropbtn {
+    background-color: none;
+}
+                  HTML         *******************/
+
+/*
+     <!-- <li class ="dropdown">        
+                     <button class="dropbtn">Contact us</button>
+                        <div class="dropdown-content">
+                            <a href="#">Timur</a>
+                            <a href="#">Sardor</a>
+                            <a href="#">Instagram</a>
+                            <a href="#">Facebook</a>
+                        </div>
+                </li> --> 
+    */
